@@ -2,6 +2,7 @@ import React from "react";
 import axios from "axios";
 import { useState } from "react";
 import Meaning from './Meaning'
+import './Dictionary.css'
 
 function Dictionary(){
 	let [loaded, setLoaded]= useState(false);
@@ -16,16 +17,16 @@ function Dictionary(){
 	function handleSubmit(event){
 		event.preventDefault();
 		setSearchingWord(word);
+		setLoaded(false);
 	}
 	function handleResponse(response){
 		setResponse(response);
 		setLoaded(true);
-		console.log(response)
 	}
 
 	if(loaded){
 		return(
-			<div>
+			<div className="Dictionary">
 				<form onSubmit={handleSubmit}>
 					<input type="text" placeholder="word" onChange={changeWord} />
 					<input type="submit" value="search" />
@@ -39,17 +40,13 @@ function Dictionary(){
 			axios.get(url).then(handleResponse);
 		}		
 		return(
-			<div>
+			<div className="Dictionary">
 				<form onSubmit={handleSubmit}>
 					<input type="text" placeholder="word" onChange={changeWord} />
 					<input type="submit" value="search" />
 				</form>
 			</div>
 		)
-	}
-
-
-
-		
+	}		
 }
 export default Dictionary

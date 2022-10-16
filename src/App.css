@@ -4,3 +4,15 @@
   margin-right: auto;
   display: block;
 }
+.App-footer {
+  max-width: 500px;
+  margin: 50px auto;
+  text-align: center;
+  color: grey;
+  font-size: 20px;
+}
+
+.App-footer a {
+  text-decoration: none;
+  color: grey;
+}

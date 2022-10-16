@@ -1,0 +1,34 @@
+.Dictionary {
+    max-width: 500px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.Dictionary input[type='text'] {
+    min-width: 50px;
+    height: 30px;
+    border: 2px solid rgb(134, 134, 246);
+    box-sizing: border-box;
+    margin: 10px 20px;
+}
+
+.Dictionary input[type='text']:focus{
+    outline: none;
+}
+
+.Dictionary input[type='submit'] {
+    min-width: 100px;
+    height: 30px;
+    border: 2px solid rgb(134, 134, 246);
+    background-color: rgb(134, 134, 246);
+    box-sizing: border-box;
+    margin: 10px 20px;
+    color: aliceblue;
+}
+
+.Dictionary input[type='submit']:hover{
+    cursor: pointer;
+    background-color: rgb(97, 97, 178);
+    border: 2px solid rgb(97, 97, 178);
+    transition: 300ms ease-in-out;
+}
