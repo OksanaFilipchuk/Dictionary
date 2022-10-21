@@ -1,0 +1,14 @@
+.PartOfSpeechDefinition {
+    border: 2px solid rgb(113, 55, 55, 0.5);
+    box-shadow: 5px 5px 5px grey;
+    color: rgb(45, 45, 45 0.5);
+    margin:20px auto;
+    padding: 10px;
+    text-align: left;
+    background-color:rgb(223, 216, 229, 0.2);
+}
+
+.PartOfSpeech h4 {
+    text-align: left;
+    margin: 10px auto;
+}

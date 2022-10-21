@@ -1,20 +1,15 @@
 import React from "react";
-import './Meaning.css'
+import './Meaning.css';
+import Phonetic from './Phonetic';
+import PartOfSpeech from './PartOfSpeech'
 
 function Meaning(props){
-	if(props.data){
+	if(props.wordData){
 		return (
-			<div className="Meaning">
-				<h3>{props.data.data[0].word}</h3>
-				<h4>{props.data.data[0].meanings[0].partOfSpeech}</h4>
-				{props.data.data[0].meanings[0].definitions.map(function(el, index){
-					if(index<3){
-						return(
-							<h5 key={index}>{el.definition}</h5>)
-						}
-						})}
-			</div>
-				
+			<div className="Meaning">				
+				<Phonetic data={props.wordData} />
+				<PartOfSpeech data={props.wordData}/>				
+			</div>				
 		)
 	} else {
 		return null
