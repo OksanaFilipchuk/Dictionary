@@ -22,13 +22,13 @@ function Dictionary(){
 		setLoaded(false);
 	}
 	function handleResponse(response){
-		setResponse(response);
-    setLoaded(true);
- 
+		setResponse(response);    
 	}
+
 	function handlePexelResponse(response){
     if(response.status === 200){
       setPexelResponse(response);
+      setLoaded(true);
     }		
 	}
 
