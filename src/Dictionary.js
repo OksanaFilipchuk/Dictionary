@@ -40,7 +40,7 @@ function Dictionary(){
 					<input type="submit" value="search" />
 				</form>				
 				<Meaning wordData={response.data}/>
-				{/* <Photo data={pexelResponse} /> */}
+				<Photo data={pexelResponse} />
 			</div>
 		)
 	}else{
